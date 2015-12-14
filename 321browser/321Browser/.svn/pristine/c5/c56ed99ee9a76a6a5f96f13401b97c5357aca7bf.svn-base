@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5" >
+
+    <include
+        android:id="@+id/main_title"
+        layout="@layout/browser_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/BottomBarLayout"
+        android:layout_below="@+id/main_title" >
+
+        <ViewFlipper
+            android:id="@+id/ViewFlipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           >
+        </ViewFlipper>
+
+        <ProgressBar
+            android:id="@+id/WebViewProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:progress="100"
+            android:progressDrawable="@drawable/progress"
+            android:secondaryProgress="0" />
+
+        <ImageView
+            android:id="@+id/BubbleRightView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bubbleright48" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/BubbleLeftView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/bubbleleft48" >
+        </ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/BottomBarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/night_urlbar_bg"
+        android:scaleType="fitXY"
+        android:weightSum="5" >
+
+        <!--  -->
+
+        <ImageButton
+            android:id="@+id/PreviousBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_bottom"
+            android:src="@drawable/menubar_back_dis" >
+        </ImageButton>
+        <!--  -->
+
+        <ImageButton
+            android:id="@+id/NextBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_bottom"
+            android:src="@drawable/menubar_forward_dis" >
+        </ImageButton>
+        <!--  -->
+
+        <ImageButton
+            android:id="@+id/ToolMenuBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_bottom"
+            android:src="@drawable/menubar_toggle_d" >
+        </ImageButton>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/NewTabBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/buttons_bottom"
+                android:src="@drawable/menubar_tabcenter_d" >
+            </ImageButton> 
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dip"
+                android:layout_marginTop="13dip"
+                android:text="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/returnHomeTabBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_bottom"
+            android:src="@drawable/menubar_home_d" >
+        </ImageButton>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_off"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_off"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

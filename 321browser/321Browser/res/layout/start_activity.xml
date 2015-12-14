@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="260dip"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_logo_show"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="90dip"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#6E7B8B"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_logo_show"
+            android:gravity="center"
+            android:text="@string/about_ad"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:gravity="center_horizontal"
+            android:text="@string/copyright"
+            android:textColor="#6E7B8B"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

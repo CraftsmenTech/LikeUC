@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/main_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="#2488e8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button0"
+                        style="@style/main_tab_bottom"
+                        android:layout_marginLeft="5dp"
+                        android:checked="true"
+                        android:text="网页" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button1"
+                        style="@style/main_tab_bottom"
+                        android:text="小说" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button2"
+                        style="@style/main_tab_bottom"
+                        android:text="新闻" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button3"
+                        style="@style/main_tab_bottom"
+                        android:text="图片" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button4"
+                        style="@style/main_tab_bottom"
+                        android:layout_marginRight="5dp"
+                        android:text="购物" />
+                </RadioGroup>
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0"
+                android:visibility="gone" >
+            </TabWidget>
+        </LinearLayout>
+    </TabHost>
+
+    <RelativeLayout
+        android:id="@+id/search_header"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/search_header_content_type_item_selected" >
+
+        <!-- 头部的 -->
+
+        <RelativeLayout
+            android:id="@+id/BarLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="0dip"
+                android:layout_toLeftOf="@+id/GoBtn"
+                android:layout_weight="0.75"
+                android:background="@drawable/rounded_edittext"
+                android:dropDownHeight="wrap_content"
+                android:dropDownWidth="fill_parent"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/search_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dip" >
+
+                    <ImageView
+                        android:id="@+id/seach_iv"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/search_icon_baidu" />
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/seach_iv"
+                        android:src="@drawable/search_icon_arrow" />
+                </RelativeLayout>
+
+                <cn.hi321.browser.ui.components.CustomAutoCompleteTextView
+                    android:id="@+id/UrlText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/search_rl"
+                    android:background="#ffffff"
+                    android:dropDownHeight="wrap_content"
+                    android:dropDownHorizontalOffset="-90dip"
+                    android:dropDownVerticalOffset="3dip"
+                    android:dropDownWidth="fill_parent"
+                    android:inputType="textUri"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/delectid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/deleteurl" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/GoBtn"
+                android:layout_width="55dip"
+                android:layout_height="35dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/defaultTextColor" >
+            </Button>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

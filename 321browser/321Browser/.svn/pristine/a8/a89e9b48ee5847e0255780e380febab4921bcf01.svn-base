@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:state_pressed="true" android:state_enabled="true"
+        android:drawable="@drawable/rd_article_channel_top_bar_night_pressed" />
+    <item android:state_pressed="false" android:state_enabled="true"
+        android:drawable="@drawable/night_urlbar_bg" />
+    <item android:state_enabled="false"
+    	android:drawable="@drawable/night_urlbar_bg" />
+</selector>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name=" competitorapp">
+        <item>com.sohu.sohuvideo</item>
+        <item>com.tencent.qqlive</item>
+        <item>com.qiyi.video</item>
+        <item>com.pplive.androidphone</item>
+        <item>tv.pps.mobile</item>
+        <item>com.youku.phone</item>
+        <item>com.tudou.android</item>
+        <item>com.xunlei.kankan</item>
+        <!-- 暴风影音 -->
+        <item>com.storm.smart</item>
+        <item>com.letv.android.client</item>
+        <!-- 开迅视频 -->
+        <item>com.kascend.video</item>
+    </string-array>
+
+    <string-array name="download_modes">
+        <item>所有下载</item>
+        <item>已完成下载</item>
+        <item>未完成下载</item>
+    </string-array>
+    <string-array name="stream_codecs">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="stream_codecs_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+
+</resources>

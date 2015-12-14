@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"  
+       android:layout_height="match_parent">
+  
+   <FrameLayout  
+       android:id="@+id/fullscreen_custom_content"  
+       android:background="@android:color/black"
+       android:layout_width="match_parent"  
+       android:layout_height="match_parent"  
+       android:visibility="gone" />  
+  
+   <FrameLayout  
+       android:id="@+id/main_content"  
+       android:layout_width="match_parent"  
+       android:layout_height="match_parent">  
+  
+       <cn.hi321.browser.ui.components.CustomWebView 
+           android:id="@+id/webview"  
+           android:layout_width="match_parent"  
+           android:layout_height="match_parent" 
+           />  
+              <!-- android:layerType="software"    -->
+    </FrameLayout > 
+</RelativeLayout> 
+ 
+
+
+

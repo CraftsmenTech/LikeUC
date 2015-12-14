@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="backColor">#C1C1C1</color>
+    <color name="detail_bgColor">#f5f5f5</color>
+    
+    <color name="defaultTextColor">#666</color>
+     <color name="play_time_color">#ffe4e0ee</color>
+    <!-- start zxing -->
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="dialog_title_background">#17170443</color>
+       <color name="gray">#66000000</color>
+       
+        <color name="press_bg">#dedad4</color>
+        
+        <!-- 烟白 -->
+    <color name="beige">#F5F5DC</color>
+    <color name="set_item_press">#33e0e0e0</color>
+    <color name="set_item_back">#464646</color>
+    <color name="set_download_text">#AAAAAA</color>
+    <color name="set_download_img">#373737</color>
+    <!-- end zxing -->
+</resources>

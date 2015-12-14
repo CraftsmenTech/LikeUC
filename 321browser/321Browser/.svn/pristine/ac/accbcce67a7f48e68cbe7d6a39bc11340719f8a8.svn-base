@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/umeng_fb_conversation_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/set_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/tb_background_top" >
+
+        <LinearLayout
+            android:id="@+id/rigthButtonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/set_left_button"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/umeng_fb_back_selector"  >
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/set_comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_Tab_live"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_titlebar" >
+
+        <ImageView
+            android:id="@+id/up_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666666" />
+
+        <ImageView
+            android:id="@+id/down_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/base_activity_subclass_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/set_Tab_live"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/set_download_only_wifi_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="53dp"
+                    android:background="@drawable/setting_press_selector" >
+
+                    <TextView
+                        android:id="@+id/set_download_only_wifi_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/wireless_download"
+                        android:textColor="@color/set_download_text"
+                        android:textSize="17sp" />
+
+                    <ToggleButton
+                        android:id="@+id/set_download_only_wifi_checkbox"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/dowmloadswitch"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#AAAAAA" />
+
+                <RelativeLayout
+                    android:id="@+id/set_activity_download_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="53dp"
+                    android:background="@drawable/set_item_selector"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/set_activity_download_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/background_download_text"
+                        android:textColor="@color/set_download_text"
+                        android:textSize="17sp" />
+
+                    <ToggleButton
+                        android:id="@+id/set_activity_download_switch_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/dowmloadswitch"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setDownlaod"
+                    android:layout_width="fill_parent"
+                    android:layout_height="53dp"
+                    android:background="@drawable/setting_press_selector"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/download_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/download_num"
+                        android:textColor="@color/set_download_text"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/clean_buffer_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="9dp"
+                        android:src="@drawable/ic_more" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#AAAAAA" />
+
+                <RelativeLayout
+                    android:id="@+id/set_activity_share_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="53dp"
+                    android:background="@drawable/setting_press_selector" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/share_setting"
+                        android:textColor="@color/set_download_text"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/setaboutlayout_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="9dp"
+                        android:src="@drawable/ic_more" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#AAAAAA" />
+
+                <RelativeLayout
+                    android:id="@+id/setaboutlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="53dp"
+                    android:background="@drawable/setting_press_selector" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/about"
+                        android:textColor="@color/set_download_text"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/set_activity_share_layout_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="9dp"
+                        android:src="@drawable/ic_more" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#AAAAAA" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/videolayout_new"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:descendantFocusability="blocksDescendants" >
+
+        <LinearLayout
+            android:id="@+id/ll_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11.5dip"
+            android:layout_marginTop="5dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relaLayTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="68dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/downloadName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ellipsize="middle"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text="雪花秘扇"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#A1A1A1"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayProcess"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relaLayTitle"
+                android:layout_marginRight="58dip"
+                android:layout_marginTop="2dip"
+                android:gravity="right|center"
+                android:orientation="horizontal" >
+
+                <ProgressBar
+                    android:id="@+id/ProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="7dip"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progress_style_download" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayProcessStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayProcess"
+                android:layout_marginTop="1dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/downloadLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.10"
+                    android:text="0M / 0M"
+                    android:textColor="#A1A1A1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/rowProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:layout_weight="0.69"
+                    android:lines="1"
+                    android:textColor="#A1A1A1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lblStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:text=" 状态暂停"
+                    android:textColor="#A1A1A1"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/downloadControl"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/download_controlbtn_selector"
+            android:tag="开始"
+            android:textColor="#A1A1A1"
+            android:textSize="11.0sp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/download_deletebtn_selector"
+            android:tag="删除"
+            android:textColor="#A1A1A1"
+            android:textSize="11.0sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/download_playbtn_selector"
+            android:tag="播放"
+            android:textColor="#ffffff"
+            android:textSize="11.0sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

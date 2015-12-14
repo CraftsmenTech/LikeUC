@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"   
+	>
+	
+     <RelativeLayout 
+         android:id="@+id/titlebar"
+         android:orientation="horizontal" 
+         android:background="@drawable/tb_background_top" 
+         android:layout_width="fill_parent" android:layout_height="wrap_content">
+		        <Button
+		            android:id="@+id/btn_logo"  
+		            android:layout_width="60dip" 
+		            android:layout_height="45dip"  
+		            android:layout_marginLeft="5.0dip" 
+		            android:layout_marginTop="5dip"
+		            android:layout_marginRight="10dip"
+		            android:layout_marginBottom="5dip"
+		            android:layout_centerVertical="true" />
+		        <TextView 
+		            android:textSize="20.0sp"  
+		            android:id="@+id/tv_title" 
+		            android:singleLine="true"
+		            android:layout_width="200dip" 
+		            android:gravity="center"
+		            android:layout_height="wrap_content" 
+		            android:layout_centerInParent="true" />
+		        
+	 
+		    </RelativeLayout>   
+	<WebView 
+	    android:layout_below="@+id/titlebar"
+	    android:id="@+id/webview" 
+	    android:layout_centerInParent="true"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		/>
+		
+	<LinearLayout
+	 android:layout_gravity="fill_horizontal|fill_vertical"
+	 android:layout_width="wrap_content" 
+	 android:layout_centerInParent="true"
+	 android:layout_height="wrap_content">
+	 <ProgressBar
+	   android:background="@drawable/drawable_waiting"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:id="@+id/progressdialog"
+		/> 
+	</LinearLayout>
+	
+	
+
+</RelativeLayout>

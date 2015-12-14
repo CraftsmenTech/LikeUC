@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/playe_layout"
+    android:background="@color/black"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+    
+    >
+	<cn.hi321.browser.player.VideoView
+		android:id="@+id/video_view"
+		android:layout_centerInParent="true"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"/>
+	
+	
+	<!-- 播放卡显示 -->
+	
+	<LinearLayout android:id="@+id/video_buffer"
+		    android:gravity="center"
+			android:layout_centerInParent="true"
+			android:orientation="horizontal" 
+			android:visibility="gone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			>
+			<ProgressBar 
+				android:id = "@+id/mediacontroller_buffer_bar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				
+				/>
+			
+			<LinearLayout android:id="@+id/video_bufferi"
+			    android:gravity="center"
+				android:orientation="vertical" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+			>
+			<TextView 
+				android:id="@+id/mediacontrolle_buffer_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:paddingLeft="6.0dip"
+				android:paddingRight="6.0dip"
+				android:textSize="10.8sp"
+				android:text="正在缓冲..." />
+			
+			<TextView
+			  android:id = "@+id/mediacontrolle_buffer_info_text"
+			  android:layout_below="@id/mediacontrolle_buffer_text"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:paddingLeft="6.0dip"
+			  android:paddingRight="6.0dip"
+			  android:text="0K/s"
+			  android:textSize="10.8sp"/>
+			</LinearLayout>
+			
+	 </LinearLayout>
+	
+	
+	
+		
+	<!-- 首次加载缓冲 -->
+	
+	<LinearLayout android:gravity="center"
+		android:orientation="vertical" 
+		android:id="@+id/player_loading"
+		android:background="@drawable/video_player_background"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TextView 
+				android:id="@+id/loading_video_name"
+				android:layout_width="300dip" 
+				android:layout_height="wrap_content" 
+		        android:ellipsize="marquee" 
+		        android:focusable="true" 
+		        android:marqueeRepeatLimit="marquee_forever" 
+		        android:focusableInTouchMode="true" 
+		        android:scrollHorizontally="true" 
+				android:gravity="center"
+				android:textSize="14.6sp" 
+				android:selectAllOnFocus="true" 
+				android:text="321影音加载..." />
+		
+		<LinearLayout android:gravity="center"
+			android:orientation="horizontal" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="10.5dip">
+			<ProgressBar android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<TextView 
+				android:id="@+id/loading_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="7.0dip"
+				android:textSize="12.6sp"
+				android:text="@string/loadvideotext" />
+			
+			
+		</LinearLayout>
+		<TextView 
+				android:id="@+id/loading_rxBytes_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="5.0dip"
+				android:textSize="12.6sp"
+				android:text="0kb/s" />
+	</LinearLayout>
+	<LinearLayout android:gravity="center"
+	    android:visibility="gone"
+		android:orientation="vertical" 
+		android:id="@+id/frame" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	   <include  layout="@layout/player" />
+	</LinearLayout>
+	
+</RelativeLayout>

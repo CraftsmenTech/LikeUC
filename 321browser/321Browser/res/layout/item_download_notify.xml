@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/videolayout"
+        android:layout_width="fill_parent"
+        android:layout_height="68dip"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="0.0dip"
+        android:paddingLeft="0.0dip"
+        android:paddingRight="0.0dip"
+        android:paddingTop="0.0dip" >
+
+
+        <ImageView
+            android:id="@+id/iv_notify_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/download_notify_start" />
+
+        <LinearLayout
+            android:id="@+id/ll_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/iv_notify_start"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relaLayTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/lblVideoName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="68dip"
+                    android:ellipsize="middle"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:text="雪花秘扇"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_downCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="13dip"
+                    android:lines="1"
+                    android:text="2/5"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayProcess"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relaLayTitle"
+                android:layout_marginRight="13dip"
+                android:layout_marginTop="2dip"
+                android:gravity="right|center"
+                android:orientation="horizontal" >
+
+                <ProgressBar
+                    android:id="@+id/ProgressBarDown"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="11dip"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progress_style_notification" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayProcessStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayProcess"
+                android:layout_marginTop="1dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_complete_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/download_complete"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_already_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0M"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_total_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/0MB - "
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_download_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:lines="1"
+                    android:text="下载中..."
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/lblStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:text="状态暂停"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

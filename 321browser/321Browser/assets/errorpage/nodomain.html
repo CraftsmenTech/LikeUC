@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="target-densityDpi=high-dpi,user-scalable=0">
+    <title>出错了${errorNo}</title>
+    <style type="text/css">
+        body,div,p,ul,ol,li,textarea,form,input,h1,h2,h3,h4,h5,dl,dt,dd,img{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            height:100%;
+        }
+        body{
+            font:14px/21px sans-serif "HelveticaNeue","Helvetica Neue",Helvetica,Arial;
+            color:#6b6b6b;
+            -webkit-text-size-adjust:none;
+            -webkit-touch-callout:none;
+            -webkit-user-select:text;
+            word-break:break-all;
+            word-wrap:break-word;
+            overflow-x:hidden
+        }
+        a{
+            text-decoration:none;
+        }
+        .horizontal-box{
+            width:80%;
+            display:-webkit-box;
+            -webkit-box-sizing:border-box;
+            -webkit-box-orient:horizontal;
+            -webkit-box-pack:start;
+            padding:5px 5px 5px 20px;
+            -webkit-box-align:start
+        }
+        .errordescription{
+            text-align:center;
+            font-size:33px;
+            font-color:black;
+        }
+        .wrap{
+            width:396px;
+            margin:0 auto;
+            padding-top:25px;
+        }
+        .rightlist{
+            padding-left:20px;
+        }
+        .rightlist li{
+            padding:0 0 8px;
+        }
+        .f20{
+            font-size:20px;
+        }
+        .w290,.w262{
+            width:290px;
+            margin:0 0;
+        }
+        .w262{
+            width:202px;
+        }
+        .btn-section{
+            margin-top:30px;
+            margin-left:40px;
+        }
+        .btn-section a{
+            color:#6fb4f5;
+            font-size:33px;
+            margin-right:70px;
+        }
+		.btn-section a:visited{
+            color:#6fb4f5;
+        }
+        .btn-section img{
+            vertical-align:-6px;
+        }
+    </style>
+</head>
+<body>
+<div id="content" align="center">
+	<br>
+	<br>
+	<img src="file:///android_asset/errorpage/error_net_disconnect.png"/>
+</div>
+<div class="wrap">
+    <div class="errordescription">找不到网页，再刷新试试！</div>
+	<br>
+	<hr>
+	<br>
+    <div class="w290 horizontal-box f20">
+        <div class="left">可能原因：</div>
+        <div class="rightlist">
+            <ul>
+                <li>页面不存在，或者暂时故障</li>
+                <li>域名解析出错</li>
+                <li>输入网址不正确</li>
+            </ul>
+        </div>
+    </div>
+	<div class="btn-section">
+        <a class="refresh" href="javascript:window.location.reload()">
+		<img src="file:///android_asset/errorpage/error_refresh.png" alt=""/>
+		刷新
+		</a>
+		<a class="back" href="javascript:window.history.back()">
+		<img src="file:///android_asset/errorpage/error_back.png" alt=""/>
+		返回
+		</a>
+	</div>
+</div>
+</body>
+</html>

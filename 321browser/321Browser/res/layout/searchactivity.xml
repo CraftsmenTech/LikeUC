@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/tb_background_top" >
+
+                <!-- 头部的 -->
+
+                <RelativeLayout
+                    android:id="@+id/BarLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="0dip"
+                        android:layout_toLeftOf="@+id/GoBtn"
+                        android:background="@color/detail_bgColor"
+                        android:dropDownHeight="wrap_content"
+                        android:dropDownWidth="fill_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <AutoCompleteTextView
+                            android:id="@+id/UrlText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="25dp"
+                            android:dropDownHeight="wrap_content"
+                            android:dropDownHorizontalOffset="-90dip"
+                            android:dropDownVerticalOffset="3dip"
+                            android:dropDownWidth="fill_parent"
+                            android:hint="输入网址"
+                            android:textSize="14sp"
+                            android:background="@color/detail_bgColor"
+                            android:inputType="textUri"
+                            android:textColor="@android:color/black" >
+                        </AutoCompleteTextView>
+
+                        <ImageView
+                            android:id="@+id/delectid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignRight="@id/UrlText"
+                            android:background="@drawable/deleteurl" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/GoBtn"
+                        android:layout_width="55dip"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="取消"
+                        android:textColor="@color/black"
+                         >
+                    </Button>
+
+                    <!--
+                 <Button
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_toLeftOf="@+id/GoBtn"
+			    android:id="@+id/deleteurl"
+			    android:layout_centerVertical="true"
+			    android:background="@drawable/deleteurl" />
+                    -->
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_xiexian"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="www."
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_dian"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="."
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_com"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=".com"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_cn"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=".cn"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_net"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=".net"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

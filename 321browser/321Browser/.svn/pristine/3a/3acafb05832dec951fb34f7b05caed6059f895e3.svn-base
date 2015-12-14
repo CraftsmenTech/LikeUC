@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="300dip" 
+	android:layout_height="wrap_content"
+	android:background="@drawable/progressbar_second"
+	android:orientation="vertical">
+	
+	<TextView 	android:id="@+id/set_player_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginTop="10dip" 
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+				android:text="@string/setplay_for_soft"
+				android:layout_weight="0"/>
+		
+	<Button 	android:id="@+id/set_player"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginTop="5dip" 
+				android:layout_marginLeft="10dip"
+				android:layout_marginBottom="10dip"
+				android:layout_marginRight="10dip"
+				android:text="软解码播放"
+				android:layout_below="@id/set_player_text"
+				android:layout_centerHorizontal="true"
+				android:layout_weight="0"/>
+	
+	
+</RelativeLayout>

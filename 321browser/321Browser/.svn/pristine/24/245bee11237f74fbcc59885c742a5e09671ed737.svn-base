@@ -1,0 +1,184 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="splash_style" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+    </style>
+    
+    <style name="waiting" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@drawable/drawable_waiting</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <style name="app_theme">
+         <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="behind_button_style">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/user_alert_size</item>
+    </style>
+
+    <style name="title_right_button">
+        <item name="android:paddingLeft">@dimen/title_rightButton_padding</item>
+        <item name="android:paddingRight">@dimen/title_rightButton_padding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@drawable/back_button_default_style</item>
+    </style>
+    
+    
+    <style name="Bookmarks">
+	</style>
+
+	<style name="Bookmarks.Title">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+	
+	<style name="History">
+	</style>
+	
+	<style name="History.Title">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+	
+	<style name="History.Url">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style> 
+     <style name="ProgressBar_Mini">
+         <item name="android:layout_width">fill_parent</item>
+         <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">false</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress</item>
+        <item name="android:minHeight">5.0dip</item>
+        <item name="android:thumb">@drawable/url_progress_fullscreen</item>
+    </style>
+	 <!--seekbar_progress_horizontal url_progress   progress_dot_normal -->
+	    <style name="MediaController_SeekBar">
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+        <item name="android:progressDrawable">@drawable/mediacontroller_seekbar</item>
+        <item name="android:thumb">@drawable/progress_dot_normal</item>
+    </style>
+      
+    <style name="MediaController_Text">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+ 
+     <style name="seekBarStyleHorizontal">
+        <item name="android:focusable">false</item>
+        <item name="android:maxHeight">6.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress_horizontal</item>
+        <item name="android:minHeight">6.0dip</item>
+        <item name="android:thumb">@drawable/progress_dot_normal</item>
+    </style>
+    
+     <style name="player_dialog_list">    
+   		<item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>    
+	</style>
+       
+        
+       <style name="style_home_text">
+           <item name="android:layout_width">wrap_content</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:gravity">center</item>
+           <item name="android:textColor">#000000</item>
+           <item name="android:layout_margin">5dp</item>
+           <item name="android:layout_weight">1</item>
+           <item name="android:textSize">18dp</item>
+
+
+      </style> 
+      
+         
+       <style name="style_home2_text">
+           <item name="android:layout_width">wrap_content</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:gravity">center</item>
+           <item name="android:textColor">#000000</item>
+           <item name="android:layout_margin">5dp</item>
+           <item name="android:layout_weight">1</item>
+           <item name="android:textSize">18dp</item>
+           <item name="android:layout_marginTop">18dp</item>
+           <item name="android:background">@drawable/rounded_edittext</item>
+      </style> 
+
+       <style name="dialog" parent="@android:style/Theme.Dialog">
+	  <item name="android:windowFrame">@null</item>
+	  <item name="android:windowIsFloating">true</item>
+	  <item name="android:windowIsTranslucent">true</item>
+	  <item name="android:windowNoTitle">true</item>
+	  <item name="android:background">@android:color/transparent</item>
+	  <item name="android:windowBackground">@android:color/transparent</item>
+	  <item name="android:backgroundDimEnabled">true</item>
+	 
+	 </style>
+	 
+       
+       <!-- search tab 样式 -->
+       <style name="main_tab_bottom">
+	<item name="android:textSize">18dp</item>
+    <item name="android:textColor">@color/radiobutton_selectot</item>
+    <item name="android:ellipsize">marquee</item>
+    <item name="android:background">@drawable/home_btn_bg</item>
+    <item name="android:paddingTop">5.0dip</item>
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:button">@null</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_marginTop">2.0dip</item>
+    
+    
+</style>
+
+        <!-- search tab 样式 -->
+       <style name="main_pop_bottom">
+	<item name="android:textSize">18dp</item>
+	<item name="android:ellipsize">marquee</item>
+	 <item name="android:paddingTop">5.0dip</item>
+	<item name="android:textColor">#000000</item>
+	    <item name="android:button">@null</item>
+    <item name="android:background">@drawable/pop_btn_bg</item>
+      <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:gravity">center</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_gravity">center_vertical</item>
+    
+</style>
+
+       
+         <style name="perference_set_activity">
+ <item name="android:windowBackground">@drawable/umeng_fb_conversation_bg</item>  <!-- 窗口背景 -->
+ <item name="android:focusable">false</item>
+ <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+ <item name="android:colorBackgroundCacheHint">#00000000</item> <!-- 背景缓存色透明，避免拖动全黑 -->
+ <item name="android:windowNoTitle">false</item> <!-- 是否有标题 -->
+    </style>
+       
+       
+       
+       
+	 <!--  <item name="android:backgroundDimAmount">0.6</item> -->
+</resources>

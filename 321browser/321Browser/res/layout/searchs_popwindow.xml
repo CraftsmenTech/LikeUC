@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/search_page_engin_container"
+    >
+
+    
+    	<TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:paddingLeft="5dip"
+            android:layout_width="300dip"
+            android:layout_height="50dip"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <RadioGroup
+                    android:id="@+id/main_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <RadioButton
+                        android:id="@+id/search_bt_pop1"
+                        style="@style/main_pop_bottom"
+                        android:layout_marginLeft="5dp"
+                        android:checked="true"   
+                        android:text="网页" />
+                    <RadioButton
+		         android:id="@+id/search_bt_pop2"
+                        style="@style/main_pop_bottom"
+		         android:text="小说" />
+
+                    <RadioButton
+                        android:id="@+id/search_bt_pop3"
+                        style="@style/main_pop_bottom"
+                        android:text="新闻" />
+                </RadioGroup>
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.0"
+                android:visibility="gone" >
+            </TabWidget>
+        </LinearLayout>
+    </TabHost>	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                  <!--   <Button
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/search_bt_pop1"
+                        style="@style/main_pop_bottom"
+                        android:checked="true"  
+                        android:layout_width="fill_parent"
+                        android:drawableLeft="@drawable/search_icon_baidu"
+                        android:text="百度" />
+                    <Button
+		         android:id="@+id/search_bt_pop2"
+                        style="@style/main_pop_bottom"
+                       
+                        android:drawableLeft="@drawable/search_icon_google"
+		         android:text="谷歌" />
+
+                    <Button
+                        android:id="@+id/search_bt_pop3"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/search_icon_google"
+                        style="@style/main_pop_bottom"
+                        android:text="321搜" />
+
+                    -->
+                    
+         
+
+
+</LinearLayout>

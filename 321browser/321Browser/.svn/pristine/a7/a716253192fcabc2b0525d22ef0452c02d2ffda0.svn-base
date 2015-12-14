@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="15dip"
+    android:layout_marginRight="15dip" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/menu_slider_content" >
+
+        <ListView
+            android:id="@+id/mListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/add_rv"
+            android:layout_centerHorizontal="true"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/add_rv"
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#37404A" >
+
+            <LinearLayout
+                android:id="@+id/linAddButton"
+                android:layout_width="160dip"
+                android:layout_height="55dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/addpopwindow_item" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:drawableLeft="@drawable/tab_center_new_tab_d"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dip"
+                    android:text="新建标签页"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

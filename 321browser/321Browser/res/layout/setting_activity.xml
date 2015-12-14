@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/umeng_fb_conversation_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#2477ab" >
+
+        <ImageView
+            android:id="@+id/setting_gohome"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/umeng_fb_back_selector" />
+
+        <TextView
+            android:id="@+id/textview_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="设置中心"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_Tab_live"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_titlebar" >
+
+        <ImageView
+            android:id="@+id/up_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#666666" />
+
+        <ImageView
+            android:id="@+id/down_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EBEBEB" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/base_activity_subclass_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/set_Tab_live"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="8dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!--
+                <RelativeLayout
+                    android:id="@+id/set_activity_download_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="53dp"
+                    android:background="@drawable/set_item_selector" 
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/set_activity_download_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/background_download_text"
+                        android:textColor="@color/set_download_text"
+                        android:textSize="17sp" />
+
+                    <ToggleButton
+                        android:id="@+id/set_activity_download_switch_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/dowmloadswitch"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+                -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/set_homepage_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="53dp"
+                        android:background="@drawable/setting_press_selector" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="主页设置"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/setaboutlayout_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="9dp"
+                            android:src="@drawable/ic_more" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#EBEBEB" />
+
+                    <RelativeLayout
+                        android:id="@+id/set_qingc_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="53dp"
+                        android:background="@drawable/setting_press_selector" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="清除历史"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/set_activity_share_layout_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="9dp"
+                            android:src="@drawable/ic_more" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#EBEBEB" />
+
+                    <RelativeLayout
+                        android:id="@+id/set_ysbh_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="53dp"
+                        android:background="@drawable/setting_press_selector"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="隐私保护"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/set_activity_share_layout_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="9dp"
+                            android:src="@drawable/ic_more" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#EBEBEB"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/set_about_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="53dp"
+                        android:background="@drawable/setting_press_selector" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/about"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/set_activity_share_layout_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="9dp"
+                            android:src="@drawable/ic_more" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#EBEBEB" />
+
+                    <RelativeLayout
+                        android:id="@+id/set_feedbrack_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="53dp"
+                        android:background="@drawable/setting_press_selector" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="反馈有礼"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/set_activity_share_layout_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="9dp"
+                            android:src="@drawable/ic_more" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- 下部的 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/set_aqbh_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="53dp"
+                        android:background="@drawable/setting_press_selector" >
+
+                        <ToggleButton
+                            android:id="@+id/set_aqbh_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingswitch"
+                            android:clickable="false"
+                            android:textOff=""
+                            android:textOn="" />
+
+                        <TextView
+                            android:id="@+id/set_download_only_wifi_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="安全保护"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#EBEBEB" />
+
+                    <RelativeLayout
+                        android:id="@+id/set_gglj_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="53dp"
+                        android:background="@drawable/setting_press_selector" >
+
+                        <ToggleButton
+                            android:id="@+id/set_gglj_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingswitch"
+                            android:clickable="false"
+                            android:textOff=""
+                            android:textOn="" />
+
+                        <TextView
+                            android:id="@+id/set_download_only_wifi_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="广告拦截"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#EBEBEB" />
+
+                    <RelativeLayout
+                        android:id="@+id/set_txjz_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="53dp"
+                        android:background="@drawable/setting_press_selector" >
+
+                        <ToggleButton
+                            android:id="@+id/set_txjz_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingswitch"
+                            android:clickable="false"
+                            android:textOff=""
+                            android:textOn="" />
+
+                        <TextView
+                            android:id="@+id/set_download_only_wifi_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="是否加载图像"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#EBEBEB" />
+
+                    <RelativeLayout
+                        android:id="@+id/set_dkck_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="53dp"
+                        android:background="@drawable/setting_press_selector" >
+
+                        <ToggleButton
+                            android:id="@+id/set_dkck_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingswitch"
+                            android:clickable="false"
+                            android:textOff=""
+                            android:textOn="" />
+
+                        <TextView
+                            android:id="@+id/set_download_only_wifi_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="启动时打开未关闭的窗口"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#EBEBEB" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

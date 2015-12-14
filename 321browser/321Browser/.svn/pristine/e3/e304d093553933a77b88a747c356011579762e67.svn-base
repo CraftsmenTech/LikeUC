@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="MobileOptimized" content="320"/>
+
+<title>出错了${errorNo}</title>
+<style type="text/css">
+#coffee {margin-top:20px; margin-bottom:50px; text-align:center}
+
+div#operate {color:#1479ad; font-size:18px; text-align:center; margin-left:30px;margin-right:30px}
+a#back{margin-left:60px}
+
+</style>
+</head>
+
+<body style="line-height:150%; text-align:center;">
+<div id="content">
+
+  <div id="coffee">
+  	<img src=${errorImg}/>
+  </div>
+  
+  <div id="operate">
+		
+		 <${backTag}  style=${backColor}><img src=${errorBackImg} border="0"/>返回</${backTagEnd}>
+		 <a id="back" href=${errorOperateClick}><img src=${errorOperateImg} border="0"/>${errorOperateText}</a>
+  
+  </div> 
+  
+</div>
+
+</body>
+</html>

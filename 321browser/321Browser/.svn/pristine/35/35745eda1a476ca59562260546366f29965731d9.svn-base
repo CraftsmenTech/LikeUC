@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="WeavePreferencesScreen" 
+	android:title="@string/PreferencesActivity.WeavePreferenceTitle"
+	android:summary="@string/PreferencesActivity.WeavePreferenceSummary">
+	<Preference
+		android:title="@string/PreferencesActivity.WeaveServerPreferenceTitle"
+		android:summary="@string/PreferencesActivity.WeaveServerPreferenceSummary"
+		android:key="PREFERENCE_WEAVE_SERVER" />
+	<EditTextPreference android:name="@string/PreferencesActivity.WeaveUsernameTitle"
+		android:summary="@string/PreferencesActivity.WeaveUsernameSummary"
+		android:title="@string/PreferencesActivity.WeaveUsernameTitle"
+		android:defaultValue="" android:key="PREFERENCE_WEAVE_USERNAME" />
+	<EditTextPreference android:name="@string/PreferencesActivity.WeavePasswordTitle"
+		android:summary="@string/PreferencesActivity.WeavePasswordSummary"
+		android:title="@string/PreferencesActivity.WeavePasswordTitle"
+		android:defaultValue="" android:password="true" android:key="PREFERENCE_WEAVE_PASSWORD" />
+	<EditTextPreference android:name="@string/PreferencesActivity.WeaveKeyTitle"
+		android:summary="@string/PreferencesActivity.WeaveKeySummary"
+		android:title="@string/PreferencesActivity.WeaveKeyTitle"
+		android:defaultValue="" android:key="PREFERENCE_WEAVE_KEY" />
+</PreferenceScreen>

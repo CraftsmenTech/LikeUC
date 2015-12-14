@@ -1,0 +1,855 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="viewport"
+	content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
+<meta name="MobileOptimized" content="480" />
+<title>321网址导航</title>
+
+<link rel="stylesheet" type="text/css"
+	href="file:///android_asset/min.css" />
+<style type="text/css">
+/*reset*/
+body,form,p,div,input,ul,li {
+	padding: 0;
+	margin: 0;
+}
+
+ul,li {
+	list-style: none;
+}
+
+img {
+	border: none
+}
+
+a {
+	color: #07519a;
+	text-decoration: none;
+}
+
+form {
+	background: none;
+}
+
+.recommend {
+	background: #EBEBEB;
+	overflow: hidden;
+	margin: 0px 0 0px 0;
+	width: 100%;
+	text-align: center
+}
+</style>
+
+</head>
+<body>
+	<header>
+		<a name="top" id="top"></a>
+
+
+	</header>
+
+	<!-- <div class="search">
+	<div class="searchC clearfix">
+    	<div class="select fl">
+        	<select id="select1">
+                <option value="baidu">百度</option>
+                <option value="Google">谷歌</option>
+            </select>
+            <div class="searchArrow"></div>
+        </div>
+        <div class="input fl"><input type="text" id="textfield1" /></div>
+        <div class="btn fr"><input id="SearchButton" type="button" onclick="search()" /></div>
+    </div>
+</div>
+ -->
+
+	<div class="recommend">
+
+		<ul class="bidu" style="margin-top: 5px;">
+			<li><a href="start.html"><img
+					src="file:///android_asset/images/header_movie.png"
+					style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+			<li><a href="http://fm.baidu.com/"><img
+					src="file:///android_asset/images/yinyue.png"
+					style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+			<li><a href="http://3g.sina.com.cn/"><img
+					src="file:///android_asset/images/app_icon_portal.png"
+					style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+			<li><a href="http://m.qiushibaike.com/"><img
+					src="file:///android_asset/images/header_joke.png"
+					style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+		</ul>
+
+		<ul class="bidu" style="margin: -3px 0px 0px 0px">
+			<li><span>视频</span></li>
+			<li><span>音乐</span></li>
+			<li><span>新闻</span></li>
+			<li><span>搞笑</span></li>
+		</ul>
+
+		<ul class="bidu" style="margin-top: 5px;">
+			<li><a href="http://tbook.yicha.cn/"><img
+					src="file:///android_asset/images/app_icon_15.png"
+					style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+			<li><a href="http://m.baidu.com/"><img
+					src="file:///android_asset/images/app_icon_16.png"
+					style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+			<li><a href="http://m.hao123.com/a/tupian?tn=sjllqjp&z=2"><img
+					src="file:///android_asset/images/navigation_header_beauty_img.png"
+					style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+			<li><a href="http://m.apk.hiapk.com/#ranking"><img
+					src="file:///android_asset/images/zhuangjibibei.png"
+					style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+		</ul>
+		<ul class="bidu" style="margin: -3px 0px 0px 0px">
+			<li><span>小说</span></li>
+			<li><span>百度</span></li>
+			<li><span>美图</span></li>
+			<li><span>装机必备</span></li>
+		</ul>
+
+
+
+	</div>
+
+
+	<div class="title bblue"
+		style="padding: 3px 12px 3px 12px; margin-top: -1px">名站导航</div>
+
+	<div class="area">
+
+		<ul class="ul_site">
+			<li class="tblue"><a onclick="subsite(1)">[名站]</a></li>
+			<li><a href="http://m.baidu.com">百度</a></li>
+			<li><a href="http://sina.cn/">新浪</a></li>
+			<li><a href="http://m.taobao.com/">淘宝</a></li>
+			<li><a href="http://m.jd.com/">京东</a></li>
+		</ul>
+		<ul class="ul_arow" onclick="subsite(1)">
+			<div id="a1" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s1">
+			<li><a href="http://i.ifeng.com/">凤凰</a></li>
+			<li><a href="http://wap.ganji.com/">赶集</a></li>
+			<li><a href="http://m.tianmao.com/">天猫</a></li>
+			<li><a href="http://m.sohu.com/">搜狐</a></li>
+			<li><a href="http://mt.renren.com/">人人</a></li>
+
+			<li><a href="http://m.weibo.cn/">微博</a></li>
+			<li><a href="http://info.3g.qq.com/">腾讯</a></li>
+			<li><a href="http://3g.163.com/">网易</a></li>
+			<li><a href="http://pt.3g.qq.com">空间</a></li>
+
+
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a onclick="subsite(2)">[新闻]</a></li>
+			<li><a href="http://sina.cn/">新浪</a></li>
+			<li><a href="http://m.sohu.com/">搜狐</a></li>
+			<li><a href="http://3g.163.com/">网易</a></li>
+			<li><a href="http://info.3g.qq.com/">腾讯</a></li>
+		</ul>
+		<ul class="ul_arow" onclick="subsite(2)">
+			<div id="a2" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s2">
+			<li><a href="http://wap.ce.cn/">中经网</a></li>
+			<li><a href="http://tnews.yicha.cn/">易查</a></li>
+			<li><a href="http://3g.31cn.com/">21CN</a></li>
+			<li><a href="http://wap.huanqiu.com">环球</a></li>
+
+
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a onclick="subsite(3)">[两性]</a></li>
+			<li><a href="http://m.jiayuan.com/">佳缘</a></li>
+			<li><a href="http://m.zhenai.com/">珍爱</a></li>
+			<li><a href="http://touch.yoyuan.com.cn/">有缘</a></li>
+			<li><a href="http://mywapapp.com">秘籍</a></li>
+		</ul>
+
+		<ul class="ul_arow" onclick="subsite(3)">
+			<div id="a3" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s3">
+			<li style="border-bottom: 0;"><a href="http://i.jandan.net/">煎蛋</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.onlylady.com/">女人志</a></li>
+			<li style="border-bottom: 0;"><a href="http://eladies.sina.cn//">口述</a></li>
+
+			<li><a href="http://m.sohu.com/c/63/?v=3">保健</a></li>
+			<li><a href="http://wap.rayli.com.cn/">瑞丽</a></li>
+			<li><a href="http://iphone.trends.com.cn/">情爱</a></li>
+			<li><a href="http://latu.3g.cn/">辣图</a></li>
+			<li><a href="http://m.kimiss.com/">闺蜜网</a></li>
+
+			<li><a href="http://wap.39.net/wap/i/sex/by/list.html">避孕</a></li>
+			<li><a href="http://wap.39.net/wap/i/sex/yjq/list.html">技巧</a></li>
+			<li><a
+				href="http://tools.iask.cn/iask/tools/monthj.php?pos=63&vt=4">安全期</a></li>
+			<li><a href="http://eladies.sina.cn/?sa=t95d40v545&vt=4">女性</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a onclick="subsite(4)">[搞笑]</a></li>
+			<li><a href="http://m.qiushibaike.com/">糗百</a></li>
+			<li><a href="http://m.lengxiaohua.com">冷笑话</a></li>
+			<li><a href="http://m.kl688.com/">麻花</a></li>
+			<li><a href="http://m.pengfu.com/">捧腹</a></li>
+		</ul>
+
+		<ul class="ul_arow" onclick="subsite(4)">
+			<div id="a4" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s4">
+
+			<li style="border-bottom: 0;"><a href="http://m.budejie.com/">不得姐</a></li>
+			<li style="border-bottom: 0;"><a href="http://www.quwan.com/">趣玩</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.kxin.cc">驿站</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://m.sohu.com/c/3043/?v=3&partner=ucyingyong&_trans_=000012_uc_yy_xh">搜狐</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.qiyigoo.com/">奇异果</a></li>
+
+			<li style="border-bottom: 0;"><a href="http://m.kelepuzi.com">可乐铺</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://juetuzhi.net/category/video/">掘图</a></li>
+			<li style="border-bottom: 0;"><a href="http://danhuaer.com/">蛋花</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://3g.laifu.org/wangwen/">来福</a></li>
+			<li style="border-bottom: 0;"><a href="http://jionger.com/">囧客</a></li>
+
+		</ul>
+		<ul class="ul_site">
+			<li class="tblue"><a onclick="subsite(5)">[小说]</a></li>
+			<li><a href="http://m.qidian.com/">起点</a></li>
+			<li><a href="http://m.xs8.cn/">言情</a></li>
+			<li><a href="http://wap.tadu.com/">塔读</a></li>
+			<li><a href="http://m.hongxiu.com/">红袖</a></li>
+		</ul>
+		<ul class="ul_arow" onclick="subsite(5)">
+			<div id="a5" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s5">
+
+			<li style="border-bottom: 0;"><a href="http://m.jjwxc.com/">晋江</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.shuqi.com/">书旗</a></li>
+			<li style="border-bottom: 0;"><a href="http://3g.xs.cn/">阅读</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.zongheng.com/">纵横</a></li>
+			<li style="border-bottom: 0;"><a href="http://www.sodu.org/">搜读</a></li>
+
+			<li style="border-bottom: 0;"><a href="http://read.10086.cn/">悦读</a></li>
+			<li style="border-bottom: 0;"><a href="http://yicha.cn/">易查</a></li>
+			<li style="border-bottom: 0;"><a href="http://book.easou.com/">宜搜</a></li>
+			<li style="border-bottom: 0;"><a href="http://3g.sina.com.cn/">新浪</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a onclick="subsite(6)">[购物]</a></li>
+			<li><a href="http://m.taobao.com/">淘宝</a></li>
+			<li><a href="http://co.koudai.com/">口袋</a></li>
+			<li><a href="http://m.tianmao.com">天猫</a></li>
+			<li><a href="http://m.suning.com/">苏宁</a></li>
+		</ul>
+
+		<ul class="ul_arow" onclick="subsite(6)">
+			<div id="a6" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s6">
+
+
+			<li style="border-bottom: 0;"><a href="http://www.amazon.cn/">亚马逊</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.vipshop.com/">唯品会</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.mogujie.com/">蘑菇街</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.vancl.com/">凡客</a></li>
+			<li style="border-bottom: 0;"><a href="http://2011.igou.cn/">爱购</a></li>
+
+		</ul>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="title bblue"
+		style="padding: 3px 12px 3px 12px; margin-top: -1px">新闻资讯</div>
+	<div class="area">
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://sina.cn/">[新闻]</a></li>
+			<li><a href="http://wap.huanqiu.com">环球</a></li>
+			<li><a href="http://m.people.cn/4g/?site=a_uc&fromid=0001">人民</a></li>
+			<li><a href="http://wap.cctv.com">央视</a></li>
+			<li><a href="http://3g.163.com/news">网易</a></li>
+		</ul>
+		<ul class="ul_arow" onclick="subsite(7)">
+			<div id="a7" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s7">
+			<li><a href="http://sina.cn/">新浪</a></li>
+			<li><a href="http://m.sohu.com/">搜狐</a></li>
+			<li><a href="http://i.ifeng.com/">凤凰</a></li>
+			<li><a href="http://news.3g.cn/">３Ｇ</a></li>
+			<li><a href="http://3g.21cn.com/">21CN</a></li>
+
+			<li><a href="http://m.chinanews.com/iphone">中新</a></li>
+			<li><a href="http://wap.xinhuanet.com/">新华</a></li>
+			<li><a href="http://wap.gmw.cn/">光明</a></li>
+			<li><a href="http://p.oeeee.com/Api/m.php?s=m">南都</a></li>
+			<li><a href="http://cn.mobile.reuters.com/">路透社</a></li>
+
+			<li style="border-bottom: 0;"><a
+				href="http://m.cankaoxiaoxi.com/">消息</a></li>
+			<li style="border-bottom: 0;"><a href="http://n.easou.com/">宜搜</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://wap.mod.gov.cn/">[军事]</a></li>
+			<li><a href="http://i.ifeng.com/">凤凰</a></li>
+			<li><a href="http://wap.tiexue.net">铁血</a></li>
+			<li><a href="http://m.xilu.com">西陆</a></li>
+			<li><a href="http://wap.huanqiu.com/">环球</a></li>
+		</ul>
+		<ul class="ul_arow" onclick="subsite(8)">
+			<div id="a8" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s8">
+			<li><a href="http://news.3g.cn/">３Ｇ</a></li>
+			<li><a href="http://m.miercn.com/">米尔</a></li>
+			<li><a href="http://wap.chinaiiss.com/">战略</a></li>
+			<li><a href="http://m.tianya.cn/touch/?fr=3g">天涯</a></li>
+
+			<li style="border-bottom: 0;"><a href="http://m.qianyan001.com/">前沿</a></li>
+			<li style="border-bottom: 0;"><a href="http://wap.mod.gov.cn/">国防部</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://wap.xinhuanet.com/">新华</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://nba.sina.cn/">[体育]</a></li>
+			<li><a href="http://dh.uc.cn/">搜狐</a></li>
+			<li><a href="http://nba.sina.cn/">新浪</a></li>
+			<li><a href="http://sports.3g.cn/">３Ｇ</a></li>
+			<li><a
+				href="http://m.hao123.com/n/v/zhibo?z=2&ver=2_android&level=1&pos=ylxx&his=1&title=%E7%9B%B4%E6%92%AD">直播</a></li>
+		</ul>
+
+		<ul class="ul_arow" onclick="subsite(9)">
+			<div id="a9" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s9">
+			<li style="border-bottom: 0;"><a href="http://wap.hupu.com">虎扑</a></li>
+			<li style="border-bottom: 0;"><a href="http://nhtx.com">足球</a></li>
+			<li style="border-bottom: 0;"><a href="http://shipei.qq.com/">腾讯</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://m.yiche.com">[汽车]</a></li>
+			<li><a href="http://m.autohome.com.cn/?ucweb">车之家</a></li>
+			<li><a href="http://m.yiche.com">易车</a></li>
+			<li><a href="http://a.xcar.com.cn">爱卡</a></li>
+			<li><a href="http://m.xgo.com.cn/">车点评</a></li>
+		</ul>
+
+		<ul class="ul_arow" onclick="subsite(10)">
+			<div id="a10" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s10">
+
+			<li style="border-bottom: 0;"><a
+				href="http://3g.sina.com.cn/3g/auto/">新浪</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://3g.163.com/touch/auto/">网易</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.pcauto.com.cn/">太平洋</a></li>
+		</ul>
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://m.jrj.com.cn/">[财经]</a></li>
+			<li><a href="http://wap.eastmoney.com">东方</a></li>
+			<li><a href="http://wap.3ggpw.cn">股评</a></li>
+			<li><a href="http://m.jrj.com.cn/">金融界</a></li>
+			<li><a href="http://m.jingji.com">经济网</a></li>
+		</ul>
+		<ul class="ul_arow" onclick="subsite(11)">
+			<div id="a11" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s11">
+
+			<li style="border-bottom: 0;"><a href="http://m.hexun.com/">和讯</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://finance.sina.cn/?ttp=n2&pos=108&vt=4">股指</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.hexin.cn/">同花顺</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://3g.zol.com.cn/">[科技]</a></li>
+			<li><a href="http://3g.zol.com.cn/">中关村</a></li>
+			<li><a href="http://wap.pconline.com.cn">PCol</a></li>
+			<li><a href="http://www.36kr.com?src=321">36氪</a></li>
+			<li><a href="http://m.cnmo.com/">手机</a></li>
+		</ul>
+
+		<ul class="ul_arow" onclick="subsite(12)">
+			<div id="a12" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s12">
+			<li style="border-bottom: 0;"><a href="http://3g.yesky.com/">天极</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://m.sohu.com/c/7/?_trans_=000012_uc_kz_kj">搜狐</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://tech.sina.cn/?sa=t101d158v3296&vt=4">新浪</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://3g.163.com/digi/special/001603CK/digiindex.html">网易</a></li>
+
+		</ul>
+
+	</div>
+
+	<div class="title borange"
+		style="padding: 3px 12px 3px 12px; margin-top: -1px; background: #26bf96;">生活服务</div>
+	<div class="area">
+
+		<ul class="bidu" style="margin-top: 5px;">
+
+			<li><a href="http://weather.html5.qq.com/"><img
+				src="data:;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAMAAAAPkIrYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2MTcyOTBDNzc4QzZFMjExOUNCMUZCMkExNjM0MDYyMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0Q0NDNTUwRURGQTAxMUUyQjVDN0NDRDUyM0JFRDdEMiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0Q0NDNTUwRERGQTAxMUUyQjVDN0NDRDUyM0JFRDdEMiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0RDIwNTIyRDdDOEUyMTE4Q0E2QTA4QjlDM0Q4OTI1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjYxNzI5MEM3NzhDNkUyMTE5Q0IxRkIyQTE2MzQwNjIxIi8+IDwvcmRmOkRlc2NyaXB0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"
+
+				class="jd_img"
+				style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+			<li><a href="http://m.8684.cn/bus_switch/"><img
+				src="data:;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAMAAAAPkIrYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2MTcyOTBDNzc4QzZFMjExOUNCMUZCMkExNjM0MDYyMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5QjhEREFGNERGQTAxMUUyOTkwQzlBQzM4QzkyQzJGRSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5QjhEREFGM0RGQTAxMUUyOTkwQzlBQzM4QzkyQzJGRSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0RDIwNTIyRDdDOEUyMTE4Q0E2QTA4QjlDM0Q4OTI1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjYxNzI5MEM3NzhDNkUyMTE5Q0IxRkIyQTE2MzQwNjIxIi8+IDwvcmRmOkRlc2NyaXB0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"
+				class="jd_img"
+				style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+			<li><a href="http://touch.qunar.com/"><img
+				src="data:;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAMAAAAPkIrYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2MTcyOTBDNzc4QzZFMjExOUNCMUZCMkExNjM0MDYyMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDRUVGMTJDQ0RGQTAxMUUyOTUyRkYxMkEwOUVEMUFFNCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDRUVGMTJDQkRGQTAxMUUyOTUyRkYxMkEwOUVEMUFFNCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0RDIwNTIyRDdDOEUyMTE4Q0E2QTA4QjlDM0Q4OTI1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjYxNzI5MEM3NzhDNkUyMTE5Q0IxRkIyQTE2MzQwNjIxIi8+IDwvcmRmOkRlc2NyaXB0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"
+				class="jd_img"
+				style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+			<li><a href="http://wap.kuaidi100.com"><img
+				src="data:;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAMAAAAPkIrYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2MTcyOTBDNzc4QzZFMjExOUNCMUZCMkExNjM0MDYyMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGREIxMzVDMURGQTAxMUUyODhBRUQzRjUxQjY3RjVEMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGREIxMzVDMERGQTAxMUUyODhBRUQzRjUxQjY3RjVEMyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0RDIwNTIyRDdDOEUyMTE4Q0E2QTA4QjlDM0Q4OTI1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjYxNzI5MEM3NzhDNkUyMTE5Q0IxRkIyQTE2MzQwNjIxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+mtWzzQAAApdQTFRF8PHy1bN/17mL4sGN0KVwwZNb17eEyqJs8fL08vT35dvO8vX407B66+Xbv45T3sek1LF71LN/1LOA48KO////0q94wZRd0aZy4cCM27qHyZ1nz6Rv2buM0c7M8fP26d/T48OPz6Nu17B7zqBn///72rmG1bSA8PHx4N7c9u7i/v//4uDf/fr20s/N8fLz9u7j4N7d4+Hg8/b53dvb3tva/fv229nX8vT2wZJZ1NHP5OLh0M3L9vb21bN9z8zK8fP08fHx8vP11LJ+7OrpwJJZwJFY8vHx8fHy8vT119TSwpRd1bOAyaFr9/f34tXF8+jY1LJ96Ne7wZJa9PPy+/fx1raD5NjI1bqazq6H8fL15MOPxJlkyJ5m0raS6uTbzZ5m5M6v2rmF+/n0yJtlvo5T+PLp1LF60q954d/e8O/v8vDxvo5U/fr14cqm39zb393cvo1Sz6Fpy6NvyqR34eDe8PDv6uXe3dnY1NDO3s6507aT38+75uTi27qG3b2J2LF9yqZ57ero8/Ly1q968vT48fDv6+XeyaN05OLg/Pjz6OHY7Onl4dPB4sKOv49TxZll6+rq17mK3NnZ8PHw2tfV8fDw17aD7uzq9fX228CW2cCe8vP26uno/v35wZNa593R6+Ta38qq8O/u7ezq7+3tvo1QwpNc17iI7ezr9fX1zqJt5MSQ7Ovr5+Xk3LuIyqV38fDx2LqL17iJx51s0KRw0Klz6N/Sv5BVwZNc6+bf4dC0wJJa/fz7x55u5uTj2NXT/vv37evr8vLy9Ovd38ik0LCK176g2LmJ5ePi4eDf7Obdxpdd9fT13sej7u3s3sWcwpVd7Ojj6OHX17eF7Orqvo1R7evowJJY2sWs2dfVwpVe1bSB8PDwWwMRkwAAAgdJREFUeNpiuEM9wDBq1qhZo2ZR0Sx1R05MMFsOAswxpezxmFV6iQsTbJOHgPmYUjvdcZrFGRZ9lQ8DxCuDQeHpAnSZpevLPHCYtcG8qu8WJpBmAQNxKTF0mQspNzwmYzfLsa3dlSSzbrk0XNPDbpZRj4UXaWbdCvKLxGqW+p3w7bdINGveUezu4ujeu4xUs3b0d+lhNcvv+i1SzbplccwIq1mxrKSb5Vp8kQPTLPXGzWSY5eVSaYRplnm1mAUrNrBKEQy2JO/GJpsdMV0PwyyjWTHsWEGzEhjUb/XBJutTFGePYRb3EVs2rKBXAQxW14Vik71sy8uBaRY/z22sQIIZDIQlhbBKC4yaNWoWJWYxC4NB1DoqmJWoCga1025TbpYQFNymglkEwKhZo2YRb1aAKBykO1Fklpp37mFNfX1NfU0g8j8vSIlZgseTtES0RCBIK1WNIrNkRG6u3a9R41li5dlxUuU2hWZVGMqaaVubGFhrGFNslqWhrpm2rImB7DA2S1fbekqGXXm+Xd4kis06GLxmUdOVVjfnrKkHKDVr35ITc85ZOa+wWjxhLmVmbdxzyNftjK/DShsHmxkhFKVVNbVA0xxTHR0w6kxwoixvCyIBxsFR5pwlz6w0LGa1LORhJAd4n8I0y33BzE1MJIOJy3dlqmPpWzGQB0bHJ0bNGjWLSgAgwADsWICPrYQ4+QAAAABJRU5ErkJggg=="
+				class="jd_img"
+				style="border: 0; width: 50px; height: 50px; border-radius: 8px;" /></a></li>
+		</ul>
+
+		<ul class="bidu" style="margin: -3px 0px 0px 0px">
+			<li><span>天气</span></li>
+			<li><span>公交</span></li>
+			<li><span>航班</span></li>
+			<li><span>快递</span></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a
+				href="http://hao.uc.cn/bst?uc_param_str=prdnfrpfbivelabtbmntpvsscp">[查询]</a></li>
+			<li><a href="http://touch.qunar.com/">列车</a></li>
+			<li><a href="http://m.elong.com/">酒店</a></li>
+			<li><a href="http://m.mtime.com/">影讯</a></li>
+			<li><a href="http://3g.sina.com.cn/dpool/astro/hdjr">黄历</a></li>
+		</ul>
+
+		<ul class="ul_arow" onclick="subsite(13)">
+			<div id="a13" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s13">
+			<li style="border-bottom: 0;"><a href="http://3g.d1xz.net">星座</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://m.1518.com/jiemeng.php">解梦</a></li>
+			<li style="border-bottom: 0;"><a href="http://3g.39.net">健康</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.youtx.com/">租房</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a
+				href="http://hao.uc.cn/bst?uc_param_str=prdnfrpfbivelabtbmntpvsscp">[综合]</a></li>
+			<li><a
+				href="http://wap.ganji.cn/bj/secondmarket/?ifid=ganji_shouye_daohang_ershou">二手</a></li>
+			<li><a href="http://3g.51job.com/">招聘</a></li>
+			<li><a href="http://m.58.com/local/bj">５８</a></li>
+			<li><a href="http://beijing.baixing.com/m/#xianxia">百姓</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a
+				href="http://hao.uc.cn/lvyou?uc_param_str=prdnfrpfbivelabtbmntpvs">[旅游]</a></li>
+			<li><a href="http://m.ctrip.com/c/ucweb">携程</a></li>
+			<li><a href="http://idigger.allyes.com/main/c?d=mso&i=3330">去哪儿</a></li>
+			<li><a href="http://m.kuxun.com">酷讯</a></li>
+			<li><a href="http://m.qyer.com">穷游</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://caipiao.163.com/m/index.html">[彩票]</a></li>
+			<li><a href="http://loto.sina.cn/">新浪</a></li>
+			<li><a href="http://3g.500.com/base_index?coopid=1721">500</a></li>
+			<li><a href="http://m.cp.360.cn/lotteryhall?from=ucweb">360</a></li>
+			<li><a href="http://3g.iletou.com/">爱乐透</a></li>
+		</ul>
+
+		<ul class="ul_arow" onclick="subsite(14)">
+			<div id="a14" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s14">
+			<li style="border-bottom: 0;"><a
+				href="http://caipiao.m.taobao.com/">淘彩</a></li>
+			<li style="border-bottom: 0;"><a href="http://wap.zhcw.com/">中彩</a></li>
+			<li style="border-bottom: 0;"><a href="http://wap.klcp.cn/">乐彩</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://m.jiayuan.com/">[交友]</a></li>
+			<li><a href="http://m.jiayuan.com/">佳缘</a></li>
+			<li><a href="http://3g.baihe.com/index/index.html">百合</a></li>
+			<li><a href="http://m.zhenai.com/">珍爱</a></li>
+			<li><a href="http://touch.youyuan.com/">有缘</a></li>
+
+		</ul>
+		<ul class="ul_arow" onclick="subsite(15)">
+			<div id="a15" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s15">
+			<li style="border-bottom: 0;"><a
+				href="http://3g.yuehui.163.com/mobile/">同城</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://wap.zhaopin.com/">[求职]</a></li>
+			<li><a href="http://wap.zhaopin.com/">智联</a></li>
+			<li><a
+				href="http://www.job1001.com/3g/index.php?mode=index&doaction=index">英才</a></li>
+			<li><a href="http://m.dajie.com">大街</a></li>
+			<li><a href="http://daguu.com/refer?cf=653">大谷</a></li>
+		</ul>
+		<ul class="ul_arow" onclick="subsite(16)">
+			<div id="a16" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s16">
+			<li style="border-bottom: 0;"><a
+				href="http://bbs.yingjiesheng.com/forum.php">应届生</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.lietou.com">猎头</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://m.jobcn.com/touch/">卓博</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://m.mail.qq.com/">[邮箱]</a></li>
+			<li><a href="http://smart.mail.163.com/?dv=smart">163</a></li>
+			<li><a href="http://m.mail.qq.com/">Ｑ邮</a></li>
+			<li><a href="http://smart.mail.126.com/">126</a></li>
+			<li><a href="http://wapmail.10086.cn">139</a></li>
+		</ul>
+
+		<ul class="ul_arow" onclick="subsite(17)">
+			<div id="a17" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s17">
+			<li style="border-bottom: 0;"><a
+				href="https://accounts.google.com/">Gmail</a></li>
+			<li style="border-bottom: 0;"><a href="http://mail.cn.yahoo.com">雅虎</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://mail.sina.com.cn/mobile/index.php">新浪</a></li>
+		</ul>
+
+	</div>
+
+
+
+
+
+	<div class="title bblue"
+		style="padding: 3px 12px 3px 12px; margin-top: -1px; background: #f39a62;">休闲娱乐</div>
+	<div class="area">
+
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://m.qiushibaike.com/">[搞笑]</a></li>
+			<li><a href="http://m.qiushibaike.com/">糗百</a></li>
+			<li><a href="http://m.lengxiaohua.com">冷笑话</a></li>
+			<li><a href="http://m.kl688.com/">麻花</a></li>
+			<li><a href="http://m.pengfu.com/">捧腹</a></li>
+		</ul>
+		<ul class="ul_arow" onclick="subsite(18)">
+			<div id="a18" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s18">
+			<li style="border-bottom: 0;"><a href="http://m.budejie.com/">不得姐</a></li>
+			<li style="border-bottom: 0;"><a href="http://www.quwan.com/">趣玩</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.kxin.cc">驿站</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://m.sohu.com/c/3043/?v=3&partner=ucyingyong&_trans_=000012_uc_yy_xh">搜狐</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.qiyigoo.com/">奇异果</a></li>
+
+			<li style="border-bottom: 0;"><a href="http://m.kelepuzi.com">可乐铺</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://juetuzhi.net/category/video/">掘图</a></li>
+			<li style="border-bottom: 0;"><a href="http://danhuaer.com/">蛋花</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://3g.laifu.org/wangwen/">来福</a></li>
+			<li style="border-bottom: 0;"><a href="http://jionger.com/">囧客</a></li>
+
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://www.nhcun.com/">[漫画]</a></li>
+			<li><a
+				href="http://manhua.yicha.cn/manhua/cartoonsimple.html?cartoonId=b8a329cd3779d1c7">海贼王</a></li>
+			<li><a
+				href="http://manhua.yicha.cn/manhua/cartoonsimple.html?cartoonId=94ffef58d95cf09d">火影</a></li>
+			<li><a href="http://www.nhcun.com/">内涵</a></li>
+			<li><a href="http://baozoumanhua.com/">暴走</a></li>
+		</ul>
+		<ul class="ul_arow" onclick="subsite(19)">
+			<div id="a19" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s19">
+			<li style="border-bottom: 0;"><a href="http://manhua.weibo.cn/">微漫画</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://manhua.yicha.cn/manhua/">易查</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://acg.3g.cn/animation3g.aspx">３Ｇ</a></li>
+
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a
+				href="http://hao.uc.cn/shequ?uc_param_str=prdnfrpfbivelabtbmntnieisipvsscp">[社区]</a></li>
+			<li><a href="http://wap.tianya.cn/ally?f=1">天涯</a></li>
+			<li><a href="http://i.mop.com/">猫扑</a></li>
+			<li><a href="http://3g.renren.com/ep.do?c=6000202">人人</a></li>
+			<li style="border-bottom: 0;"><a href="http://m.douban.com/">豆瓣</a></li>
+
+		</ul>
+		<ul class="ul_arow" onclick="subsite(20)">
+			<div id="a20" class="down"></div>
+		</ul>
+		<ul class="sub_site" style="display: none;" id="s20">
+			<li style="border-bottom: 0;"><a href="http://pt.3g.qq.com/">Q空间</a></li>
+			<li style="border-bottom: 0;"><a
+				href="http://wapp.baidu.com/?idx=30000&ssid=0&from=0&bd_page_type=1&uid=wiaui_1331298945_5971&pu=sz@1330_240&itj=33">贴吧</a></li>
+			<li style="border-bottom: 0;"><a href="http://www.19lou.com/wap">19楼</a></li>
+
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://m.weibo.cn/">[微博]</a></li>
+			<li><a href="http://m.weibo.cn/">新浪</a></li>
+			<li><a href="http://pt.3g.qq.com/s?aid=touchLogin&t=weibo">腾讯</a></li>
+			<li><a href="http://w.sohu.com/m/home.do">搜狐</a></li>
+			<li><a
+				href="http://3g.163.com/t/?mobilewbco=nb_sjwyw_sy_p1_%E5%BE%AE%E5%8D%9A">网易</a></li>
+		</ul>
+
+		<ul class="ul_site">
+			<li class="tblue"><a href="http://m.sohu.com/c/21/?v=2"
+				class="blue">[两性]</a></li>
+			<li><a href="http://wap.rayli.com.cn/?from=ucweb">瑞丽</a></li>
+			<li><a href="http://3g.39.net">健康</a></li>
+			<li><a href="http://3g.163.com/touch/lady/">女人</a></li>
+			<li><a href="http://m.sohu.com/c/21/?v=2">情感</a></li>
+		</ul>
+
+	</div>
+
+	<footer>
+		<p>
+			<a onclick="window.feedbrack.clickOnAndroid()">意见反馈</a><span>|</span><font onClick="location.href='#top'">回顶部
+				↑</font>
+		</p>
+		
+	</footer>
+	<!-- <script type="text/javascript"
+		src="http://hao.uc.cn/ucindex/js/config.js"></script>
+
+	<script type="text/javascript"
+		src="http://hao.uc.cn/ucindex/js/all.min.js"></script> -->
+
+	<script language="javascript">
+function subsite(x){
+ var ly=document.getElementById("s"+x);
+ if (ly.style.display=="none") {
+  ly.style.display="";
+  document.getElementById("a"+x).className="up";
+ }else{
+  ly.style.display="none";
+  document.getElementById("a"+x).className="down";
+ }
+}
+</script>
+
+	<script type="text/javascript">
+              //SiteStat.action();
+              NAVIGATION.ACTION.weathering(); //天气  
+	            NAVIGATION.ACTION.rolling("rolling_div_20120418"); //轮播      
+	            //NAVIGATION.ACTION.searching();//网站搜索
+
+//change Tab
+var s=1;
+var bindTapOnTab={
+  init:function(btn,cnt,currentClass){
+    var _this=this;
+    _this.btn=btn;
+    _this.cnt=cnt;
+    _this.crtClass=currentClass;
+    for(var i=1;i<4;i++){
+      _this.tap(_this.btn,i);
+    }
+  },
+  tap:function(selector,num){
+    var _this=this;
+    $(selector+num).tap(function(){
+      clearInterval(change);
+      _this.resetStyle();
+      _this.show(num);
+    });
+  },
+  resetStyle:function(){
+    var _this=this;
+    for(var c=1;c<4;c++){
+      _this.hide(c);
+    }
+  },
+  show:function(num){
+    $(this.btn+num).attr("class", this.crtClass);
+    $(this.cnt+num).css("display", "block");
+  },
+  hide:function(num){
+    $(this.btn+num).attr("class", "");
+    $(this.cnt+num).css("display", "none");
+  }
+}
+bindTapOnTab.init('#btn_','#tab_',"tab_on");
+change=setInterval(function(){
+  bindTapOnTab.hide(s);
+  var d=s+1;if(d>3){d=1;}
+  bindTapOnTab.show(d);
+  s=s+1;if(s>3){s=1;}
+}, 3000);//自动切换定时
+//Tab
+function tab_search(){
+  var li = $("#Tab_search li"),len=li.length;
+  for(var k=0;k<len;k++){
+    +function(k){
+      li.eq(k).tap(function(){
+        for(var j=0;j<len;j++){
+        li.eq(j).attr("class", "");
+        $("#tab_ss_"+j).css("display", "none");
+      }
+      li.eq(k).attr("class", "tab_on2");
+      $("#tab_ss_"+k).css("display", "block");
+      });
+    }(k)
+  }
+}
+tab_search();
+</script>
+	<script type="text/javascript">
+$(function(){
+	//$(".searchC .input").width($("body").width() - 151);
+	$(".topNav dl:last").css("background","none");
+	$(".topNav dl dd:last-child").css("background","none");
+	$(".boxCon a.direction").click(function(){
+		var heightNum = $(this).prev(".boxConMain").children("dd").length;
+
+		var thisHeight = Math.ceil(heightNum/4) * 30 + "px";
+		if($(this).parent().hasClass("selected")){
+			$(".boxCon.selected").animate({
+				height:"30px"
+			},300);
+			$(this).parent().removeClass("selected").addClass("unSelected");
+		}else if($(this).parent().hasClass("unSelected")){
+			$(this).parent().removeClass("unSelected").addClass("selected");
+			$(this).parent().animate({
+				height:thisHeight
+			},300);
+			$(this).parent().siblings(".boxCon").removeClass("selected").addClass("unSelected");
+			$(".boxCon.unSelected").animate({
+				height:"30px"
+			},300);
+		}
+	});
+	</script>
+	<script language="javascript">
+function search(){
+	//alert(document.getelementbyid("select1").value);
+	var str1 = document.getElementById("select1").options[document.getElementById("select1").selectedIndex].value;
+	//alert(str1);
+	var str2 = document.getElementById("textfield1").value;
+	//alert(str2);
+	
+	if(str1 == "baidu"){
+	    //alert(1);
+		window.location.href="http://m.baidu.com/s?word="+str2;
+	}else if(str1 == "Google"){
+	    //alert(2);
+		window.location.href="http://www.google.com.hk/m/search?hl=zh-CN&q="+str2;
+	}else{
+	    //alert(3);
+		window.location.href="http://m.so.com/s?q="+encodeURI(str2);
+	}
+}
+function href360(str){
+	str = "http://m.so.com/s?q="+encodeURI(str);
+	return(str);
+}
+function temperRange(temper1,temper2){
+	var str = "";
+	var minstr = null;
+	var maxstr = null;
+	temper1 = parseInt(temper1);
+	temper2 = parseInt(temper2);
+	if(temper1 < temper2){
+		minstr = temper1;
+		maxstr = temper2;
+	}else if(temper1 > temper2){
+		minstr = temper2;
+		maxstr = temper1;
+	}
+	str = maxstr + "~" + minstr + "℃";
+	return str;
+}
+function wordLoad(){
+$.ajax({
+	type : "get",
+	async:false,
+	url:"http://s.mse.360.cn/reci/index?ua=android_800_480_3.0.0.0&fmt=jsonp",
+	dataType:"jsonp",
+	jsonp: "jsonpCallback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(默认为:callback) 
+	jsonpCallback:"jsonpCallback",
+	success : function(data){
+		alert(111);
+		//var json = eval('(' + data + ')'); 
+		//console.log(data);
+		var hotWord = data.newsreci;
+		//console.log(hotWord.length);
+		//Math.floor(Math.random()*24) //随机获取热词的下标
+		var firstKey = Math.floor(Math.random()*24);
+		var secKey = Math.floor(Math.random()*24);
+		var thrKey = Math.floor(Math.random()*24);
+		alert("第一个热词为："+ hotWord[firstKey].text);
+		while(firstKey == secKey || firstKey == thrKey || secKey == thrKey){
+			secKey = Math.floor(Math.random()*24);
+			thrKey = Math.floor(Math.random()*24);
+		}
+		$(".hotWord .word").html('<a href="' + href360(hotWord[firstKey].text) + '">' + hotWord[firstKey].text + '</a>·<a href="' + href360(hotWord[secKey].text) + '">' + hotWord[secKey].text + '</a>·<a href="' + href360(hotWord[thrKey].text) + '">' + hotWord[thrKey].text + '</a>');
+	},
+	error:function(){
+		alert('热词数据加载失败');
+	}
+});
+}
+</script>
+
+
+</body>
+</html>
